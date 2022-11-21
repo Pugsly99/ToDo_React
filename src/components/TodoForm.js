@@ -11,6 +11,7 @@ function TodoForm(props) {
 		e.preventDefault();
 
 		props.onSubmit({
+			//if I want to optimize I could look through all existing ID's to make sure it doesnt already exist
 			id: Math.floor(Math.random() * 100000),
 			text: input,
 		});
